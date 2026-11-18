@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risol Lovely - Camilan Penuh Cinta</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#" class="brand">
+        <img src="assets/logo.jpg" alt="Logo">
+        <span>Risol <b>Lovely.</b></span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#produk">Produk</a>
+        <a href="#album">Album</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <div class="hero-text">
+        <span class="mini-title">HOMEMADE WITH LOVE ♡</span>
+
+        <h1>
+            Camilan Lezat,<br>
+            <span>Penuh Cinta.</span>
+        </h1>
+
+        <p>
+            Temukan kelezatan risol homemade dengan isian favorit
+            dan kulit yang renyah. Teman terbaik untuk setiap
+            momenmu!
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#produk" class="btn-primary">Lihat Produk ›</a>
+            <a href="#about" class="btn-outline">Tentang Kami</a>
+        </div>
+
+        <div class="stats">
+            <div>
+                <h3>03</h3>
+                <p>Varian Rasa</p>
+            </div>
+            <div>
+                <h3>Fresh</h3>
+                <p>Dibuat dengan Cinta</p>
+            </div>
+            <div>
+                <h3>UMKM</h3>
+                <p>Usaha Lokal</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <span class="star star-one">✧</span>
+        <span class="star star-two">✿</span>
+
+        <div class="image-arch">
+            <img src="assets/produk1.jpg" alt="Risol homemade">
+        </div>
+
+        <div class="floating-card">
+            <span>♡</span>
+            <div>
+                <strong>So Delicious!</strong>
+                <small>Homemade special</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section products" id="produk">
+    <div class="section-heading">
+        <span>OUR MENU</span>
+        <h2>Menu <b>Favorit.</b></h2>
+        <p>Pilih camilan kesukaanmu dan nikmati kelezatannya!</p>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="assets/produk1.jpg" alt="Risol Ayam Suwir">
+            <div class="product-info">
+                <span class="tag">BEST SELLER</span>
+                <h3>Risol Ayam Suwir</h3>
+                <p>Risol gurih dengan isian ayam suwir yang lezat.</p>
+                <div class="product-bottom">
+                    <strong>Rp2.500</strong>
+                    <a href="#" class="order-btn"
+                       onclick="orderProduct('Risol Ayam Suwir',2500); return false;">
+                        Pesan
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/produk2.jpg" alt="Risol Sayur">
+            <div class="product-info">
+                <span class="tag">FRESH</span>
+                <h3>Risol Sayur</h3>
+                <p>Isian sayuran yang nikmat dibalut kulit renyah.</p>
+                <div class="product-bottom">
+                    <strong>Rp2.000</strong>
+                    <a href="#" class="order-btn"
+                       onclick="orderProduct('Risol Sayur',2000); return false;">
+                        Pesan
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/produk3.jpg" alt="Risol Mayo">
+            <div class="product-info">
+                <span class="tag">FAVORIT</span>
+                <h3>Risol Mayo</h3>
+                <p>Perpaduan mayo creamy dengan rasa yang istimewa.</p>
+                <div class="product-bottom">
+                    <strong>Rp3.000</strong>
+                    <a href="#" class="order-btn"
+                       onclick="orderProduct('Risol Mayo',3000); return false;">
+                        Pesan
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section album" id="album">
+    <div class="section-heading">
+        <span>OUR GALLERY</span>
+        <h2>Galeri <b>Risol Lovely.</b></h2>
+        <p>Setiap foto punya cerita dan rasa yang istimewa.</p>
+    </div>
+
+    <h3 class="gallery-title">♡ Koleksi Produk</h3>
+    <div class="gallery-grid">
+        <img src="assets/produk1.jpg" alt="Foto produk 1" class="gallery-img">
+        <img src="assets/produk2.jpg" alt="Foto produk 2" class="gallery-img">
+        <img src="assets/produk3.jpg" alt="Foto produk 3" class="gallery-img">
+    </div>
+
+    <h3 class="gallery-title">♡ Cerita Bersama Produk</h3>
+    <div class="gallery-grid">
+        <img src="assets/bersama1.jpg" alt="Foto bersama 1" class="gallery-img">
+        <img src="assets/bersama2.jpg" alt="Foto bersama 2" class="gallery-img">
+        <img src="assets/bersama3.jpg" alt="Foto bersama 3" class="gallery-img">
+    </div>
+</section>
+
+<section class="about-section" id="about">
+    <div class="about-image">
+        <img src="assets/produk2.jpg" alt="Risol Lovely">
+    </div>
+
+    <div class="about-text">
+        <span>ABOUT US ♡</span>
+        <h2>Dibuat dengan Cinta, Disajikan dengan Rasa.</h2>
+        <p>
+            Risol Lovely adalah usaha camilan homemade yang
+            menghadirkan berbagai pilihan risol dengan rasa
+            lezat dan harga terjangkau.
+        </p>
+        <p>
+            Kami percaya bahwa camilan sederhana bisa membuat
+            setiap momen menjadi lebih menyenangkan.
+        </p>
+        <a href="#kontak" class="btn-primary">Hubungi Kami ›</a>
+    </div>
+</section>
+
+<section class="section contact" id="kontak">
+    <div class="section-heading">
+        <span>GET IN TOUCH</span>
+        <h2>Hubungi <b>Kami.</b></h2>
+        <p>Ingin menikmati Risol Lovely? Yuk, pesan sekarang!</p>
+    </div>
+
+    <div class="contact-grid">
+        <div class="contact-card">
+            <span>☎</span>
+            <h3>WhatsApp</h3>
+            <p>083114102242</p>
+            <a href="https://wa.me/6283114102242">Hubungi Kami</a>
+        </div>
+
+        <div class="contact-card">
+            <span>⌖</span>
+            <h3>Alamat</h3>
+            <p>Pasar 2 Bahapal</p>
+        </div>
+
+        <div class="contact-card">
+            <span>✉</span>
+            <h3>Email</h3>
+            <p>balqislarasati@icloud.com</p>
+            <a href="mailto:balqislarasati@icloud.com">Kirim Email</a>
+        </div>
+
+        <div class="contact-card">
+            <span>◷</span>
+            <h3>Jam Operasional</h3>
+            <p>10:00 - 15:00 WIB</p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <h2>Risol <b>Lovely.</b></h2>
+    <p>Camilan lezat, dibuat dengan penuh cinta ♡</p>
+    <small>© 2026 Risol Lovely. All Rights Reserved.</small>
+</footer>
+
+<a class="floating-wa" href="https://wa.me/6283114102242" aria-label="Pesan melalui WhatsApp">
+    ☎
+</a>
+
+<div class="image-modal" id="imageModal">
+    <button id="closeModal" aria-label="Tutup gambar">×</button>
+    <img id="modalImage" src="" alt="Foto diperbesar">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
